@@ -1,6 +1,6 @@
 pragma solidity ^0.4.18;
 
-import "/bandowner.sol";
+import "/bandLeader.sol";
 // import "onlyOwner"
 
 
