@@ -1,8 +1,6 @@
 pragma solidity ^0.4.18;
 
 import "/bandLeader.sol";
-// import "onlyOwner"
-
 
 contract bandProfile is bandOwner{
    
