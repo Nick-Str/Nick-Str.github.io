@@ -17,7 +17,7 @@ contract editorHire is Founder {
     mapping (address => Editor) editors;
     address[] public editorAccts;
    
-    function setEditor(address _editorAddress, uint _id, string _fName, string _lName, string _location, string _genre) public {
+    function setEditor(address _editorAddress, uint _id, string _fName, string _lName, string _location, string _genre) public isFounder {
         var editor = editors[_editorAddress];
        
         editor.id = _id;
