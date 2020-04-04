@@ -1,7 +1,7 @@
 pragma solidity >=0.4.22 <0.7.0;
 
 /**
- * @title Owner
+ * @title Leader of The Band
  * @dev Set & change owner
  */
 contract bandOwner {
@@ -25,7 +25,7 @@ contract bandOwner {
     /**
      * @dev Set contract deployer as owner
      */
-    constructor() public {
+    constructor() public payable{
         owner = msg.sender; // 'msg.sender' is sender of current call, contract deployer for a constructor
         emit OwnerSet(address(0), owner);
     }
